@@ -2,15 +2,19 @@
   <head>
     <title>The Rock (1996)</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
-    <meta property="og:title" content="AirBrush: The Secret to a Perfect Selfie">
-    <meta property="og:type" content="article">
-    <meta property="og:description" content="Use Airbrush for a free, easy-to-use photo editor that lets you enhance your natural beauty without harsh filters.">
-    <meta property="og:image" content="http://xiuxiu.mobile.meitudata.com/tuiguang/airbrush/download/img/bg_en.jpg">
-    <meta property="og:image:secure_url" content="http://xiuxiu.mobile.meitudata.com/tuiguang/airbrush/download/img/bg_en.jpg">
-    <meta property="og:url" content="http://xiuxiu.mobile.meitudata.com/tuiguang/airbrush/download/en/">
+    <style type="text/css">
+      img{
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
+    </style>
   </head>
   <body>
-     <p>这只是一个测试</p>
+    <img id="img" src="img/0.jpg">
   </body>
+  <script type="text/javascript">
+    var x = document.getElementById("img");
+    x.src = "img/"+Math.floor(Math.random()*11)+".jpg"
+  </script>
 </html>
